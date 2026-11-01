@@ -1,0 +1,4 @@
+Change Component Footprint: Designator=BOOT Old Footprint=T_SW 6x3.5 SMD New Footprint=SIP2
+Change Component Footprint: Designator=RST Old Footprint=T_SW 6x3.5 SMD New Footprint=SIP2
+Change Component Comment : Designator=BOOT Old Comment=SW_PUSH New Comment=SIP_2
+Change Component Comment : Designator=RST Old Comment=SW_PUSH New Comment=SIP_2

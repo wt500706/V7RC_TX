@@ -1,0 +1,125 @@
+Added Component: Designator=*(snail_CH)
+Add component. Clean all parameters for all variants
+Added Component: Designator=BAT(SIP3)
+Add component. Clean all parameters for all variants
+Added Component: Designator=BOOT(T_SW 6x3.5 SMD)
+Add component. Clean all parameters for all variants
+Added Component: Designator=C1(0603)
+Add component. Clean all parameters for all variants
+Added Component: Designator=C2(0603)
+Add component. Clean all parameters for all variants
+Added Component: Designator=C3(1210)
+Add component. Clean all parameters for all variants
+Added Component: Designator=C4(0603)
+Add component. Clean all parameters for all variants
+Added Component: Designator=C5(0603)
+Add component. Clean all parameters for all variants
+Added Component: Designator=L1(COIL_5852)
+Add component. Clean all parameters for all variants
+Added Component: Designator=LS1(SIP2)
+Add component. Clean all parameters for all variants
+Added Component: Designator=LS2(SIP2)
+Add component. Clean all parameters for all variants
+Added Component: Designator=Q1(SOT-23)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Manufacturer Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "http://www.irf.com/"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "DatasheetVersion"; Value = "PD-9.814"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "17-Jul-2002"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "Re-released for DXP Platform."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Note"; Value = "Pin 2 is electrically connected to pin 4."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageDescription"; Value = "TO, Thru-Hole, Vertical, Heatsink Mounted; 3 In-Line Leads; Pitch 2.54 mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageReference"; Value = "TO-220AB"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageVersion"; Value = "Feb-1997"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Published"; Value = "8-Jun-2000"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Added Component: Designator=R1(0603)
+Add component. Clean all parameters for all variants
+Added Component: Designator=R2(0603)
+Add component. Clean all parameters for all variants
+Added Component: Designator=R3(0603)
+Add component. Clean all parameters for all variants
+Added Component: Designator=R4(0603)
+Add component. Clean all parameters for all variants
+Added Component: Designator=RST(T_SW 6x3.5 SMD)
+Add component. Clean all parameters for all variants
+Added Component: Designator=S1(SIP3)
+Add component. Clean all parameters for all variants
+Added Component: Designator=S2(SIP3)
+Add component. Clean all parameters for all variants
+Added Component: Designator=SW(SIP3)
+Add component. Clean all parameters for all variants
+Added Component: Designator=U1(SOT23-6)
+Add component. Clean all parameters for all variants
+Added Component: Designator=U2(LGA-14)
+Add component. Clean all parameters for all variants
+Added Component: Designator=UART(SIP4)
+Add component. Clean all parameters for all variants
+Added Pin To Net: NetName=BAT IN Pin=BAT-1
+Added Pin To Net: NetName=GND Pin=BAT-3
+Added Pin To Net: NetName=GND Pin=BOOT-2
+Added Pin To Net: NetName=3V Pin=C1-2
+Added Pin To Net: NetName=GND Pin=C2-1
+Added Pin To Net: NetName=3V Pin=C2-2
+Added Pin To Net: NetName=GND Pin=C3-1
+Added Pin To Net: NetName=GND Pin=C5-1
+Added Pin To Net: NetName=3V Pin=C5-2
+Added Pin To Net: NetName=3V Pin=L1-2
+Added Pin To Net: NetName=NetLS1_1 Pin=LS1-1
+Added Pin To Net: NetName=5V Pin=LS1-2
+Added Pin To Net: NetName=NetLS1_1 Pin=LS2-1
+Added Pin To Net: NetName=5V Pin=LS2-2
+Added Pin To Net: NetName=NetQ1_1 Pin=Q1-1
+Added Pin To Net: NetName=NetLS1_1 Pin=Q1-2
+Added Pin To Net: NetName=GND Pin=Q1-3
+Added Pin To Net: NetName=3V Pin=R1-2
+Added Pin To Net: NetName=GND Pin=R2-1
+Added Pin To Net: NetName=LASER Pin=R4-1
+Added Pin To Net: NetName=NetQ1_1 Pin=R4-2
+Added Pin To Net: NetName=GND Pin=RST-2
+Added Pin To Net: NetName=GND Pin=S1-1
+Added Pin To Net: NetName=SV1 Pin=S1-3
+Added Pin To Net: NetName=GND Pin=S2-1
+Added Pin To Net: NetName=SV2 Pin=S2-3
+Added Pin To Net: NetName=BAT IN Pin=SW-3
+Added Pin To Net: NetName=GND Pin=U1-2
+Added Pin To Net: NetName=GND Pin=U2-1
+Added Pin To Net: NetName=3V Pin=U2-5
+Added Pin To Net: NetName=GND Pin=U2-6
+Added Pin To Net: NetName=GND Pin=U2-7
+Added Pin To Net: NetName=3V Pin=U2-8
+Added Pin To Net: NetName=3V Pin=U2-12
+Added Pin To Net: NetName=SCL Pin=U2-13
+Added Pin To Net: NetName=SDA Pin=U2-14
+Added Pin To Net: NetName=GND Pin=UART-1
+Added Pin To Net: NetName=RX Pin=UART-2
+Added Pin To Net: NetName=TX Pin=UART-3
+Added Pin To Net: NetName=3V Pin=UART-4
+Added Pin To Net: NetName=NetBOOT_1 Pin=BOOT-1
+Added Net: Name=NetBOOT_1
+Added Pin To Net: NetName=NetC1_1 Pin=C1-1
+Added Pin To Net: NetName=NetC1_1 Pin=R1-1
+Added Pin To Net: NetName=NetC1_1 Pin=R2-2
+Added Pin To Net: NetName=NetC1_1 Pin=U1-3
+Added Net: Name=NetC1_1
+Added Pin To Net: NetName=NetC4_1 Pin=C4-1
+Added Pin To Net: NetName=NetC4_1 Pin=L1-1
+Added Pin To Net: NetName=NetC4_1 Pin=U1-6
+Added Net: Name=NetC4_1
+Added Pin To Net: NetName=NetC4_2 Pin=C4-2
+Added Pin To Net: NetName=NetC4_2 Pin=U1-1
+Added Net: Name=NetC4_2
+Added Pin To Net: NetName=NetM1_2 Pin=RST-1
+Added Net: Name=NetM1_2
+Added Pin To Net: NetName=NetR3_2 Pin=R3-2
+Added Pin To Net: NetName=NetR3_2 Pin=U1-4
+Added Net: Name=NetR3_2
+Added Pin To Net: NetName=VO Pin=C3-2
+Added Pin To Net: NetName=VO Pin=R3-1
+Added Pin To Net: NetName=VO Pin=S1-2
+Added Pin To Net: NetName=VO Pin=S2-2
+Added Pin To Net: NetName=VO Pin=SW-2
+Added Pin To Net: NetName=VO Pin=U1-5
+Added Net: Name=VO
+Added Class: Name=FLY_RX
+Added Room: Name=FLY_RX

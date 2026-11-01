@@ -1,0 +1,16 @@
+Removed Pin From Net: NetName=BO Pin=BO-1
+Removed Pin From Net: NetName=BO Pin=SW-1
+Removed Pin From Net: NetName=BAT IN Pin=SW-2
+Removed Member From Class: ClassName=FLY_S1 Member=BO
+Removed Member From Class: ClassName=FLY_S1 Member=SW
+Added Component: Designator=S1(SW-12D07)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "17-Jul-2002"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "Re-released for DXP Platform."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageDescription"; Value = "Switch; 2 Leads"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageReference"; Value = "SPST-2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Published"; Value = "24-Mar-1999"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=BAT IN Pin=S1-1
+Added Pin To Net: NetName=BO Pin=S1-2
+Added Member To Class: ClassName=FLY_S1 Member=Component S1 SW-SPST

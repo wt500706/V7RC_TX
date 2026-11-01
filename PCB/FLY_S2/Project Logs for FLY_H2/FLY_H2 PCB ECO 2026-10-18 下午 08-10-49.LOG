@@ -1,0 +1,36 @@
+Added Component: Designator=*(snail_CH)
+Add component. Clean all parameters for all variants
+Added Pin To Net: NetName=NetBT1_2 Pin=BT1-2
+Added Pin To Net: NetName=NetBT1_2 Pin=BT2-1
+Added Pin To Net: NetName=GND Pin=BT2-2
+Added Pin To Net: NetName=GND Pin=C1-1
+Added Pin To Net: NetName=5V Pin=C1-2
+Added Pin To Net: NetName=GND Pin=C2-1
+Added Pin To Net: NetName=5V Pin=C2-2
+Added Pin To Net: NetName=GND Pin=C3-1
+Added Pin To Net: NetName=BO Pin=C3-2
+Added Pin To Net: NetName=GND Pin=C4-1
+Added Pin To Net: NetName=3V Pin=C4-2
+Added Pin To Net: NetName=NetLS1_1 Pin=LS1-1
+Added Pin To Net: NetName=3V Pin=M1-14
+Added Pin To Net: NetName=3V Pin=M1-14
+Added Pin To Net: NetName=GND Pin=M1-15
+Added Pin To Net: NetName=GND Pin=M1-15
+Added Pin To Net: NetName=5V Pin=M1-16
+Added Pin To Net: NetName=5V Pin=M1-16
+Added Pin To Net: NetName=NetQ1_1 Pin=Q1-1
+Added Pin To Net: NetName=NetLS1_1 Pin=Q1-2
+Added Pin To Net: NetName=GND Pin=Q1-3
+Added Pin To Net: NetName=NetQ1_1 Pin=R5-2
+Added Pin To Net: NetName=GND Pin=S1-1
+Added Pin To Net: NetName=BO Pin=S1-2
+Added Pin To Net: NetName=GND Pin=S2-1
+Added Pin To Net: NetName=BO Pin=S2-2
+Added Pin To Net: NetName=BO Pin=SW-1
+Added Pin To Net: NetName=GND Pin=U2-1
+Added Pin To Net: NetName=3V Pin=U2-5
+Added Pin To Net: NetName=GND Pin=U2-6
+Added Pin To Net: NetName=GND Pin=U2-7
+Added Pin To Net: NetName=3V Pin=U2-8
+Added Pin To Net: NetName=3V Pin=U2-12
+Added Member To Class: ClassName=FLY_H2 Member=Component * SNAIL_CH

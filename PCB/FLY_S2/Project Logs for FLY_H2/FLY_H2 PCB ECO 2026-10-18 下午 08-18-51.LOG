@@ -1,0 +1,5 @@
+Added Component: Designator=BT1(PH2.0)
+Add component. Clean all parameters for all variants
+Added Pin To Net: NetName=BAT IN Pin=BT1-1
+Added Pin To Net: NetName=GND Pin=BT1-2
+Added Member To Class: ClassName=FLY_H2 Member=Component BT1 BAT

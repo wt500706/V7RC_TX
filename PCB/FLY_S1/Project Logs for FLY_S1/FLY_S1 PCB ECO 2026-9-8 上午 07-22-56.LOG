@@ -1,0 +1,10 @@
+Removed Pin From Net: NetName=BO Pin=C3-2
+Removed Pin From Net: NetName=GND Pin=C4-1
+Removed Pin From Net: NetName=BL Pin=C4-2
+Removed Member From Class: ClassName=FLY_S1 Member=C4
+Added Component: Designator=C1(0603)
+Add component. Clean all parameters for all variants
+Added Pin To Net: NetName=GND Pin=C1-1
+Added Pin To Net: NetName=BO Pin=C1-2
+Added Pin To Net: NetName=BL Pin=C3-2
+Added Member To Class: ClassName=FLY_S1 Member=Component C1 22uF

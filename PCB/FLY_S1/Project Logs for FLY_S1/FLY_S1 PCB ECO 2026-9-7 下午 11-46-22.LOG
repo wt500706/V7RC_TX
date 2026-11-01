@@ -1,0 +1,36 @@
+Removed Pin From Net: NetName=BO Pin=BZ1-0
+Removed Pin From Net: NetName=GND Pin=LED1-1
+Removed Pin From Net: NetName=3V Pin=LED1-4
+Removed Pin From Net: NetName=GND Pin=LED2-1
+Removed Pin From Net: NetName=3V Pin=LED2-4
+Removed Pin From Net: NetName=BO Pin=LS2-1
+Removed Pin From Net: NetName=NetLS1_1 Pin=LS2-2
+Removed Pin From Net: NetName=GND Pin=Q1-3
+Removed Pin From Net: NetName=BL Pin=R4-1
+Removed Pin From Net: NetName=BO Pin=R4-2
+Removed Pin From Net: NetName=GND Pin=S1-1
+Removed Pin From Net: NetName=BL Pin=S1-2
+Removed Pin From Net: NetName=SV4 Pin=S1-3
+Removed Pin From Net: NetName=GND Pin=S2-1
+Removed Pin From Net: NetName=BL Pin=S2-2
+Removed Pin From Net: NetName=SV3 Pin=S2-3
+Removed Member From Class: ClassName=OTTO_H2 Member=LED1
+Removed Member From Class: ClassName=OTTO_H2 Member=LED2
+Removed Member From Class: ClassName=OTTO_H2 Member=LS2
+Removed Member From Class: ClassName=OTTO_H2 Member=Q1
+Removed Member From Class: ClassName=OTTO_H2 Member=R3
+Removed Member From Class: ClassName=OTTO_H2 Member=R4
+Removed Member From Class: ClassName=OTTO_H2 Member=R6
+Removed Member From Class: ClassName=OTTO_H2 Member=S1
+Removed Member From Class: ClassName=OTTO_H2 Member=S2
+Change Component Comment : Designator=L1 Old Comment=4.7uH New Comment=2.2uH
+Change Component Comment : Designator=D1 Old Comment=DIODE New Comment=SS54
+Added Component: Designator=*(snail_CH)
+Add component. Clean all parameters for all variants
+Added Component: Designator=D2(SMA_DIODE)
+Add component. Clean all parameters for all variants
+Added Pin To Net: NetName=NetD1_1 Pin=D2-1
+Added Pin To Net: NetName=BL Pin=D2-2
+Change Class Name : Old Net Name=OTTO_H2 New Net Name=FLY_S1
+Added Member To Class: ClassName=FLY_S1 Member=Component * SNAIL_CH
+Added Member To Class: ClassName=FLY_S1 Member=Component D2 SS54
