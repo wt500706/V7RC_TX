@@ -1,6 +1,0 @@
-Added Component: Designator=V1(SOT-89)
-Add component. Clean all parameters for all variants
-Added Pin To Net: NetName=GND Pin=V1-1
-Added Pin To Net: NetName=5V Pin=V1-2
-Added Pin To Net: NetName=BO Pin=V1-3
-Added Member To Class: ClassName=FLY_H2 Member=Component V1 LDO

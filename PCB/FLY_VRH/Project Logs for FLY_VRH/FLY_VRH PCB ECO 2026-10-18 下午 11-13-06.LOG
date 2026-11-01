@@ -1,5 +1,0 @@
-Added Component: Designator=L1(LED-0805)
-Add component. Clean all parameters for all variants
-Added Pin To Net: NetName=CHG Pin=L1-1
-Added Pin To Net: NetName=NetL1_2 Pin=L1-2
-Added Member To Class: ClassName=FLY_VRH Member=Component L1 RED

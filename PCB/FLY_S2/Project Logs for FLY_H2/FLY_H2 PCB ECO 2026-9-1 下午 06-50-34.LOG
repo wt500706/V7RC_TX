@@ -1,8 +1,0 @@
-Removed Pin From Net: NetName=BO Pin=V1-1
-Removed Pin From Net: NetName=GND Pin=V1-2
-Added Pin To Net: NetName=GND Pin=V1-1
-Added Pin To Net: NetName=BO Pin=V1-2
-Added Member To Class: ClassName=FLY_H2 Member=Component C2 22uF
-Added Member To Class: ClassName=FLY_H2 Member=Component Q1 NMOS-2
-Added Member To Class: ClassName=FLY_H2 Member=Component S1 SIP_3
-Added Member To Class: ClassName=FLY_H2 Member=Component S2 SIP_3

@@ -1,4 +1,0 @@
-Removed Pin From Net: NetName=BAT Pin=BT1-1
-Removed Pin From Net: NetName=BAT Pin=SW-2
-Added Pin To Net: NetName=NetBT1_1 Pin=BT1-1
-Added Pin To Net: NetName=NetBT1_1 Pin=SW-2

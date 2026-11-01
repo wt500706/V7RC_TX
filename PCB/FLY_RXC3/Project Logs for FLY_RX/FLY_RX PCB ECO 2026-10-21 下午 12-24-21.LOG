@@ -1,8 +1,0 @@
-Added Component: Designator=R7(0603)
-Add component. Clean all parameters for all variants
-Added Pin To Net: NetName=3V Pin=LS1-2
-Added Pin To Net: NetName=3V Pin=LS2-2
-Added Pin To Net: NetName=VO Pin=R7-1
-Added Pin To Net: NetName=NetLED1_1 Pin=R7-2
-Added Net: Name=NetLED1_1
-Added Member To Class: ClassName=FLY_RX Member=Component R7 1K

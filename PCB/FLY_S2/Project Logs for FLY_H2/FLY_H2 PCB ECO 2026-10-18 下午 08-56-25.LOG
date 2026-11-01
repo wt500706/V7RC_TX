@@ -1,5 +1,0 @@
-Removed Pin From Net: NetName=SV1 Pin=M1-3
-Removed Pin From Net: NetName=SV1 Pin=M1-3
-Added Pin To Net: NetName=SV1 Pin=M1-11
-Added Pin To Net: NetName=SV1 Pin=M1-11
-Added Member To Class: ClassName=FLY_H2 Member=Component S2 SIP_3
