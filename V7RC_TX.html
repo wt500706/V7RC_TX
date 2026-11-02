@@ -4,14 +4,14 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="theme-color" content="#13283b">
-<title>ROBOLAB V7RC BLE 遙控器</title>
+<title>ROBOLAB BLE 遙控器</title>
 <style>
 :root{font-family:system-ui,-apple-system,"Noto Sans TC",sans-serif;color:#eef5fc;background:#0d1928}*{box-sizing:border-box}body{margin:0;padding:14px;touch-action:manipulation}.panel{max-width:510px;margin:auto;background:#16283c;border:1px solid #34506a;border-radius:20px;padding:18px;box-shadow:0 10px 35px #0004}header{display:flex;align-items:center;justify-content:space-between;gap:12px}.heading{font-size:20px;font-weight:750}.status{font-size:13px;color:#bac9d9;margin-top:6px;overflow-wrap:anywhere}.status.online{color:#78e3a0}.status.error{color:#ffadad}button{font:inherit;cursor:pointer;touch-action:none;user-select:none;-webkit-user-select:none}.connect{border:0;background:#3b91ee;color:white;padding:13px 17px;border-radius:12px;font-weight:700;white-space:nowrap}.connect.disconnect{background:#a9444b}.connect:disabled{opacity:.65}.divider{height:1px;background:#35516c;margin:18px 0}.groups{display:grid;grid-template-columns:repeat(3,1fr);gap:9px}.group{border:1px solid #58748e;background:#233b54;color:#e6f1fc;border-radius:12px;padding:14px 3px;font-weight:700}.group.selected{background:#317fcd;border-color:#83c5ff}.slider-block{margin:20px 0}.slider-header{display:flex;justify-content:space-between;margin-bottom:10px;font-weight:700}.slider-header span{color:#bbd5ef;font-variant-numeric:tabular-nums}input[type=range]{width:100%;accent-color:#51a8ff;cursor:pointer;touch-action:pan-y}.directions{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}.dir{min-height:85px;background:#29445f;color:white;border:1px solid #52728e;border-radius:14px;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:4px}.dir .arrow{font-size:32px;line-height:1}.dir .key{font-size:14px;font-weight:700}.dir.pressed{background:#1680c7;border-color:#8ed4ff;transform:scale(.97)}.empty{visibility:hidden}.footer{font-size:12px;color:#9db4c9;text-align:center;margin-top:17px;line-height:1.6}.diagnostic{font-size:12px;color:#aac5df;margin-top:12px;overflow-wrap:anywhere;font-family:ui-monospace,monospace}button:focus-visible,input:focus-visible{outline:3px solid #b8e3ff;outline-offset:2px}@media(max-width:350px){.panel{padding:12px}.heading{font-size:17px}.dir{min-height:72px}}
 </style>
 </head>
 <body>
 <main class="panel">
-<header><div><div class="heading">ROBOLAB V7RC BLE</div><div id="status" class="status" role="status" aria-live="polite">● 尚未連線</div></div><button id="connect" class="connect" type="button">藍牙連線</button></header>
+<header><div><div class="heading">ROBOLAB BLE 發射器</div><div id="status" class="status" role="status" aria-live="polite">● 尚未連線</div></div><button id="connect" class="connect" type="button">藍牙連線</button></header>
 <div class="divider"></div>
 <div class="groups" aria-label="群組選擇"><button class="group selected" data-group="1" aria-pressed="true">群組 1</button><button class="group" data-group="2" aria-pressed="false">群組 2</button><button class="group" data-group="3" aria-pressed="false">群組 3</button></div>
 <section class="slider-block"><label class="slider-header" for="throttle1">油門 1 <span id="throttle1-value">0 / 15</span></label><input id="throttle1" type="range" min="0" max="15" value="0" step="1"></section>
@@ -29,7 +29,7 @@
 <button class="dir" data-key="8"><span class="arrow">↘</span><span class="key">K8</span></button>
 </div>
 <div id="packet" class="diagnostic">SS89696969696966464#</div>
-<div class="footer">按住方向鍵控制，放開回中心 · 每 100 ms 發送 SS8<br>建議使用 Android Chrome 與 HTTPS（GitHub Pages）</div>
+<div class="footer">蝸牛手建館_SnailMaker_</div>
 </main>
 <script>
 'use strict';
@@ -47,13 +47,17 @@ const packetEl=document.getElementById('packet');
 const dirButtons=[...document.querySelectorAll('.dir')];
 const encoder=new TextEncoder();
 function hex(value){return value.toString(16).toUpperCase().padStart(2,'0')}
-function throttleValue(step){return LOW+Math.round(step*(HIGH-LOW)/15)}
+function throttleValue(step) {
+    if (step <= 0) return LOW;
+    if (step >= 15) return HIGH;
+    return LOW + Math.ceil(step * (HIGH - LOW) / 15);
+}
 function makePacket(){
  const axes=[CENTER,CENTER,CENTER,CENTER,CENTER,CENTER,throttleValue(throttle1),throttleValue(throttle2)];
  if(activeKey){const [x,y]=positions[activeKey];const offset=(group-1)*2;
    if(group===2){axes[offset]=y;axes[offset+1]=x}else{axes[offset]=x;axes[offset+1]=y}
  }
- return 'SS8'+axes.map(hex).join('')+'#';
+ return 'CODE : '+axes.map(hex).join('')+'#';
 }
 function refreshPacket(){packetEl.textContent=makePacket()}
 function setStatus(message,kind=''){statusEl.textContent='● '+message;statusEl.className='status '+kind}
