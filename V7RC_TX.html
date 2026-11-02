@@ -57,7 +57,7 @@ function makePacket(){
  if(activeKey){const [x,y]=positions[activeKey];const offset=(group-1)*2;
    if(group===2){axes[offset]=y;axes[offset+1]=x}else{axes[offset]=x;axes[offset+1]=y}
  }
- return 'CODE : '+axes.map(hex).join('')+'#';
+ return 'SS8'+axes.map(hex).join('')+'#';
 }
 function refreshPacket(){packetEl.textContent=makePacket()}
 function setStatus(message,kind=''){statusEl.textContent='● '+message;statusEl.className='status '+kind}
